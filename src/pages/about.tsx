@@ -13,16 +13,28 @@ const About = () => {
 
   return (
     <Layout>
-      <SEO title="About | Jodie" desc="Hi. I'm LekoArts! You can visit my website or my other Gatsby projects." />
-      <AnimatedBox style={pageAnimation} py={[6, 6, 6, 8]} px={[6, 6, 8, 6, 8, 13]}>
-        <h1>Hi. I'm LekoArts!</h1>
+      <SEO
+        title='About | Tiffany'
+        desc="Hi. I'm LekoArts! You can visit my website or my other Gatsby projects."
+      />
+      <AnimatedBox
+        style={pageAnimation}
+        py={[6, 6, 6, 8]}
+        px={[6, 6, 8, 6, 8, 13]}
+      >
+        <h1>Hi. I'm Tiffany.</h1>
         <p>
-          You can visit my <a href="https://www.lekoarts.de/en">website</a> or my other{' '}
-          <a href="https://gatsby-starter-portfolio.netlify.com">Gatsby projects</a>.
+          You can visit my{' '}
+          <a href='https://www.instagram.com/trwhitephoto/'>Instagram</a> or
+          {' '}<a href='https://www.eyeem.com/u/trwhite'>Eyeem</a> for
+          more photos.
+          Alternatively, if you're into iPhoneography, you can
+          find me on{' '}
+          <a href='https://mobitog.com/members/tiffany.5595/'>Mobitog</a>.
         </p>
       </AnimatedBox>
     </Layout>
-  )
+  );
 }
 
 export default About
