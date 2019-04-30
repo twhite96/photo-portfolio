@@ -15,7 +15,7 @@ const About = () => {
     <Layout>
       <SEO
         title='About | Tiffany'
-        desc="Hi. I'm LekoArts! You can visit my website or my other Gatsby projects."
+        desc="Hi, I'm Tiffany. These are my photos."
       />
       <AnimatedBox
         style={pageAnimation}
