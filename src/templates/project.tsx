@@ -5,7 +5,7 @@ import { transparentize, readableColor } from 'polished'
 import styled from 'styled-components'
 import { config, useSpring, animated } from 'react-spring'
 import Layout from '../components/layout'
-import { Box, AnimatedBox, Button } from '../elements'
+import { Box, AnimatedBox } from '../elements'
 import SEO from '../components/SEO'
 
 const PBox = styled(AnimatedBox)`
@@ -37,11 +37,6 @@ const Description = styled(animated.div)`
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
   line-height: 1.58;
-`
-
-const PButton = styled(Button)<{ color: string }>`
-  background: ${props => (props.color === 'white' ? 'black' : props.color)};
-  color: ${props => readableColor(props.color === 'white' ? 'black' : props.color)};
 `
 
 type PageProps = {
@@ -125,12 +120,6 @@ const Project: React.FunctionComponent<PageProps> = ({ data: { project, images }
           ))}
         </PBox>
       </Content>
-      <PBox textAlign="center" py={10} px={[6, 6, 8, 10]}>
-        <h2>Want to start your own project?</h2>
-        <PButton color={project.color} py={4} px={8}>
-          Contact Us
-        </PButton>
-      </PBox>
     </Layout>
   )
 }
