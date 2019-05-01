@@ -7,6 +7,7 @@ import { config, useSpring, animated } from 'react-spring'
 import Layout from '../components/layout'
 import { Box, AnimatedBox } from '../elements'
 import SEO from '../components/SEO'
+import { ChildImageSharp } from '../types';
 
 const PBox = styled(AnimatedBox)`
   max-width: 1400px;
@@ -96,7 +97,7 @@ const Project: React.FunctionComponent<PageProps> = ({ data: { project, images }
     <Layout color={project.color}>
       <SEO
         pathname={project.slug}
-        title={`${project.title_detail} | Jodie`}
+        title={`${project.title_detail} | Tiffany`}
         desc={project.desc}
         node={project.parent}
         banner={project.cover.childImageSharp.resize.src}
