@@ -21,11 +21,11 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
     border: 0;
     margin: 0;
-    
+
     h1, h2, h3, h4, h5, h6 {
       font-weight: ${theme.fontWeights.bold};
     }
-    
+
     h1 {
       font-size: ${theme.fontSizes[5]};
     }
@@ -44,10 +44,10 @@ const GlobalStyles = createGlobalStyle`
     h6 {
       font-size: ${theme.fontSizes[0]};
     }
-    
+
     @media (max-width: 600px) {
       font-size: 16px;
-      
+
       h1 {
         font-size: ${theme.fontSizes[4]};
       }
@@ -86,7 +86,7 @@ const GlobalStyles = createGlobalStyle`
       color: ${theme.colors.primary};
     }
   }
-  
+
   ${reset}
 `
 
@@ -223,25 +223,25 @@ const Layout = ({ children, color }: LayoutProps) => {
       <>
         <GlobalStyles />
         <Wrapper>
-          <SideBarInner bg={color} as="aside" p={[6, 6, 8]}>
+          <SideBarInner bg={color} as='aside' p={[6, 6, 8]}>
             <Flex
-              flexWrap="nowrap"
+              flexWrap='nowrap'
               flexDirection={['row', 'row', 'row', 'column']}
               alignItems={['center', 'center', 'center', 'flex-start']}
-              justifyContent="space-between"
+              justifyContent='space-between'
             >
               <Box width={['3rem', '4rem', '5rem', '6rem']}>
-                <Link to="/" aria-label="LekoArts, Back to Home">
+                <Link to='/' aria-label='LekoArts, Back to Home'>
                   <Logo />
                 </Link>
               </Box>
               <Nav
                 color={color}
                 mt={[0, 0, 0, 10]}
-                as="nav"
-                flexWrap="nowrap"
+                as='nav'
+                flexWrap='nowrap'
                 flexDirection={['row', 'row', 'row', 'column']}
-                alignItems="flex-start"
+                alignItems='flex-start'
               >
                 {data.navigation.edges.map(({ node: item }) => (
                   <PartialNavLink to={item.link} key={item.name}>
@@ -254,14 +254,24 @@ const Layout = ({ children, color }: LayoutProps) => {
           <Main>{children}</Main>
           <Footer color={color}>
             <Box p={[6, 6, 8]} fontSize={0}>
-              Starter by <a href="https://www.lekoarts.de/en">LekoArts</a>.<br />
-              <a href="https://github.com/LekoArts/gatsby-starter-portfolio-jodie">Source</a>.
+              Portfolio by{' '}
+              <a href='https://www.instagram.com/trwhitephoto/'>
+                {' '}
+                Tiffany White |
+              </a>{' '}
+              Built with
+              <a href='https://www.gatsbyjs.org/'> Gatsby</a> | Theme by
+              <a href='https://github.com/LekoArts/gatsby-starter-portfolio-jodie'>
+                {' '}
+                LekoArts
+              </a>{' '}
+              | v1
             </Box>
           </Footer>
         </Wrapper>
       </>
     </ThemeProvider>
-  )
+  );
 }
 
 export default Layout
