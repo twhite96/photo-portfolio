@@ -43,13 +43,13 @@
   cover: "./products/2019-04-29-15-min.jpg"
   desc: "Sometimes I take shots of products for my developer Instagram account. These are those photos."
 
-- title: "Nature"
+- title: "Nature & Still Life"
   title_detail: "Colors everywhere."
-  slug: "nature"
-  category: "Nature"
+  slug: "nature-and-still-life"
+  category: "Nature & Still Life"
   color: "#ffc600"
   images: "nature"
-  cover: "./nature/2019-04-29-5-min.jpg"
+  cover: "./nature-and-still-life/2019-04-29-5-min.jpg"
   desc: "Nature, whether flowers, beaches, or just sunlight, can have amazing effects on your mood. Getting out and shooting is something I have made a priority."
 
 - title: "Architecture"

@@ -10,7 +10,7 @@ module.exports = {
   siteLanguage: 'en', // Language Tag on <html> element
   siteLogo: '/logos/logo.png', // Used for SEO and manifest
   siteDescription:
-    'Image-heavy photography portfolio with colorful accents & great typography',
+    'iPhoneography and traditional photography of the Susquehanna Valley',
   author: 'T.R White Photo', // Author for schema.org JSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
