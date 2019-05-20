@@ -77,7 +77,7 @@ module.exports = {
         icon: 'src/favicon.png'
       }
     },
-    `gatsby-plugin-remove-serviceworker`,
+    // `gatsby-plugin-remove-serviceworker`,
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify'
   ]
